@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
             rigidBody.AddForce(Vector2.right * moveH * acceleration);
         }
 
+
         if (Mathf.Abs(rigidBody.velocity.x) > maxSpeed)
         {
             Vector2 vel = new Vector2(Mathf.Sign(rigidBody.velocity.x) * maxSpeed, rigidBody.velocity.y);
